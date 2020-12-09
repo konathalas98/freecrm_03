@@ -13,6 +13,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 //@RunWith(Cucumber.class)
 @CucumberOptions(
 		features = "Feature"
+	,plugin = {"json:target/cucumber.json"}
 		,glue={"stepDefinition"}
 		,tags={"@LoginTest"}
 		//,monochrome=true //to display clear output on console in readable format
